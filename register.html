@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Register - BusTrack</title>
+
+    <!-- Main CSS -->
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
+
+</head>
+
+
+<body>
+
+    <!-- =====================================
+         REGISTER CONTAINER
+    ====================================== -->
+
+    <div class="register-container">
+
+        <div class="register-box">
+
+            <!-- Bus Icon -->
+
+            <div class="bus-icon">
+                🚌
+            </div>
+
+
+            <!-- Heading -->
+
+            <h1>
+                Create Account
+            </h1>
+
+
+            <p class="subtitle">
+                Register for BusTrack
+            </p>
+
+
+            <!-- =================================
+                 REGISTER FORM
+            ================================== -->
+
+            <form id="registerForm">
+
+
+                <!-- Full Name -->
+
+                <label for="name">
+                    Full Name
+                </label>
+
+                <input
+                    type="text"
+                    id="name"
+                    placeholder="Enter your full name"
+                    autocomplete="name"
+                    required
+                >
+
+
+                <!-- Mobile Number -->
+
+                <label for="mobile">
+                    Mobile Number
+                </label>
+
+                <input
+                    type="tel"
+                    id="mobile"
+                    placeholder="Enter 10 digit mobile number"
+                    maxlength="10"
+                    pattern="[0-9]{10}"
+                    inputmode="numeric"
+                    autocomplete="tel"
+                    required
+                >
+
+
+                <!-- Email -->
+
+                <label for="email">
+                    Email Address
+                </label>
+
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="Enter your email"
+                    autocomplete="email"
+                    required
+                >
+
+
+                <!-- Password -->
+
+                <label for="password">
+                    Password
+                </label>
+
+                <input
+                    type="password"
+                    id="password"
+                    placeholder="Minimum 6 characters"
+                    minlength="6"
+                    autocomplete="new-password"
+                    required
+                >
+
+
+                <!-- Role -->
+
+                <label for="role">
+                    Register As
+                </label>
+
+                <select
+                    id="role"
+                    required
+                >
+
+                    <option value="">
+                        Select Role
+                    </option>
+
+                    <option value="customer">
+                        Customer
+                    </option>
+
+                    <option value="driver">
+                        Bus Driver
+                    </option>
+
+                </select>
+
+
+                <!-- =================================
+                     DRIVER BUS SECTION
+                     Hidden by default
+                ================================== -->
+
+                <div
+                    id="driverSection"
+                    style="display: none;"
+                >
+
+                    <label for="busNumber">
+                        Bus Number
+                    </label>
+
+                    <input
+                        type="text"
+                        id="busNumber"
+                        placeholder="Example: MH15AB1234"
+                        autocomplete="off"
+                    >
+
+                </div>
+
+
+                <!-- =================================
+                     REGISTER BUTTON
+                ================================== -->
+
+                <button
+                    type="submit"
+                >
+                    📝 Create Account
+                </button>
+
+
+            </form>
+
+
+            <!-- Login Link -->
+
+            <p class="login-text">
+
+                Already have an account?
+
+                <a href="login.html">
+                    Login
+                </a>
+
+            </p>
+
+
+            <!-- Home Link -->
+
+            <p class="login-text">
+
+                <a href="index.html">
+                    ← Back to Home
+                </a>
+
+            </p>
+
+
+        </div>
+
+    </div>
+
+
+    <!-- =====================================
+         AUTH JAVASCRIPT
+    ====================================== -->
+
+    <script
+        type="module"
+        src="js/auth.js"
+    ></script>
+
+
+</body>
+
+</html>

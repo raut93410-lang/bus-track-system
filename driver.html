@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>BusTrack - Driver Dashboard</title>
+
+    <!-- Main CSS -->
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
+
+</head>
+
+
+<body>
+
+    <!-- =====================================
+         DRIVER DASHBOARD
+    ====================================== -->
+
+    <div class="login-container">
+
+        <div class="login-box">
+
+            <!-- Bus Icon -->
+            <div class="login-icon">
+                🚌
+            </div>
+
+
+            <!-- Heading -->
+            <h1>
+                Driver Dashboard
+            </h1>
+
+
+            <p class="login-subtitle">
+                Bus Tracking Control
+            </p>
+
+
+            <!-- =================================
+                 DRIVER BUS NUMBER
+            ================================== -->
+
+            <h3 id="driverBus">
+                Loading Bus...
+            </h3>
+
+
+            <!-- =================================
+                 GPS STATUS
+            ================================== -->
+
+            <p id="gpsStatus">
+                🔴 GPS is OFF
+            </p>
+
+
+            <!-- =================================
+                 START TRIP
+            ================================== -->
+
+            <button
+                type="button"
+                class="login-btn"
+                id="startTrip"
+            >
+                🚍 Start Trip
+            </button>
+
+
+            <!-- =================================
+                 END TRIP
+            ================================== -->
+
+            <button
+                type="button"
+                class="login-btn"
+                id="endTrip"
+                style="display: none;"
+            >
+                🛑 End Trip
+            </button>
+
+
+            <!-- =================================
+                 LOGOUT
+            ================================== -->
+
+            <button
+                type="button"
+                class="login-btn"
+                id="logoutButton"
+            >
+                Logout
+            </button>
+
+
+        </div>
+
+    </div>
+
+
+    <!-- =====================================
+         DRIVER JAVASCRIPT
+    ====================================== -->
+
+    <script
+        type="module"
+        src="js/driver.js"
+    ></script>
+
+</body>
+
+</html>

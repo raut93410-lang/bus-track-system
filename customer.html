@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>BusTrack - Find Your Bus</title>
+
+    <!-- Main CSS -->
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
+
+</head>
+
+
+<body>
+
+    <!-- =====================================
+         CUSTOMER CONTAINER
+    ====================================== -->
+
+    <div class="login-container">
+
+        <div class="login-box">
+
+            <!-- Bus Icon -->
+            <div class="login-icon">
+                🚌
+            </div>
+
+
+            <!-- Heading -->
+            <h1>
+                Find Your Bus
+            </h1>
+
+
+            <p class="login-subtitle">
+                Enter your bus number to find its location
+            </p>
+
+
+            <!-- =================================
+                 BUS SEARCH
+            ================================== -->
+
+            <input
+                type="text"
+                id="searchBus"
+                placeholder="Example: MH15AB1234"
+                autocomplete="off"
+            >
+
+
+            <button
+                type="button"
+                class="login-btn"
+                id="searchButton"
+            >
+                🔎 Search Bus
+            </button>
+
+
+            <!-- =================================
+                 BUS RESULT
+            ================================== -->
+
+            <div id="busResult"></div>
+
+
+            <!-- =================================
+                 LOGOUT
+            ================================== -->
+
+            <button
+                type="button"
+                class="login-btn"
+                id="logoutButton"
+            >
+                Logout
+            </button>
+
+
+        </div>
+
+    </div>
+
+
+    <!-- =====================================
+         CUSTOMER JAVASCRIPT
+    ====================================== -->
+
+    <script
+        type="module"
+        src="js/customer.js"
+    ></script>
+
+</body>
+
+</html>
