@@ -202,34 +202,29 @@ select {
 
 .features {
     display: flex;
+    flex-direction: row;       /* Horizontal */
     justify-content: center;
+    align-items: stretch;
     gap: 20px;
 
     max-width: 1000px;
-
     margin: 70px auto 0;
 }
 
 .feature-card {
     width: 280px;
-
     background: #ffffff;
-
     padding: 25px;
-
     border-radius: 15px;
 
-    box-shadow:
-        0 10px 30px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
 
     transition: 0.3s ease;
 }
 
 .feature-card:hover {
     transform: translateY(-5px);
-
-    box-shadow:
-        0 15px 35px rgba(0, 0, 0, 0.20);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.20);
 }
 
 .feature-icon {
@@ -247,8 +242,6 @@ select {
     font-size: 14px;
     line-height: 1.5;
 }
-
-
 /* =========================================
    FOOTER
 ========================================= */
